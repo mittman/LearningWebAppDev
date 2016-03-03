@@ -1,3 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,900,600italic,300italic);
+
+.form {
+  text-shadow: 2px 2px 2px 2px;
+  font-size: 1em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  padding: 10px;
+}
+
+input:focus {
+  border: 2px solid #555555;
+  background-color: #FDFDFD;
+}
+
+.button {
+  background-color: #729FCF;
+  border: none;
+  padding: 5px;
+  border: 2px solid black;
+  color: #000000;
+  margin: 10px;
+}
+
+.button:hover {
+  color: #FFFFFF;
+  background-color: #204A87;
+  cursor: pointer;
+}
+
+.button:active {
+  color: #AD7FA8;
+}
+
+nav a {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 1px 1px #000000;
+}
+
+nav a:hover {
+  color: #92C1F6;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+nav {
+  background: #729FCF;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  padding: 1em;
+  border: 1px solid #204A87;
+}
+
+li {
+  padding: 0.2em;
+}
+
+li a {
+  font-size: 1em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #F62400;
+  cursor: pointer;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  padding: 5px 0 0 5px;
+}
+
+h4, h5 {
+  font-size: 1em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0 0 0 5px;
+}
+
+p, ul {
+  font-size: 1em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  padding: 10px 0 0 0;
+}
+
+.content {
+  background: #C4A000;
+  padding: 1%;
+}
+
+.faq:nth-of-type(odd) {
+  background: #EEEEEC;
+}
+
+.faq:nth-of-type(odd):hover {
+  background: #D7FBA7;
+}
+
+.faq:nth-of-type(even) {
+  background: #BABDB6;
+}
+
+.faq:nth-of-type(even):hover {
+  background: #CECEF6;
+}
+
+.question {
+  font-size: 1em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0.5em;
+}
+
+.answer {
+  font-size: 0.9em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  padding: 0.5em;
+}
+
+#signup {
+  width: 275px;
+}
+
+#signup input {
+  float: right;
+}
+
+footer {
+  padding: 0.5em;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+img {
+  height: 300px;
+}
+
 body {
   background: #f9e933;
 }
@@ -19,16 +184,19 @@ header {
 header h1 {
   float: left;
   width: 570px;
+  margin: 10px 0 0 0;
 }
 
 header nav {
   float: right;
-  width: 285px;
+  width: 200px;
+  margin: 10px 0 0 0;
 }
 
 main {
   background: white;
   overflow: auto;
+  padding: 10px;
 }
 
 main .left {
