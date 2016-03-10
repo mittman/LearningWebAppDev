@@ -1,8 +1,8 @@
 /* jshint browser: true, jquery: true, curly: true, eqeqeq: true, forin: true, immed: true, indent: 4, latedef: true, newcap: true, nonew: true, quotmark: double, undef: true, unused: true, strict: true, trailing: true */
-
 var exercise1 = function (nums) {
     "use strict";
-    var sum = 0, i;
+    var sum = 0,
+        i;
 
     for (i = 0; i < nums.length; i++) {
         sum = sum + nums[i];
@@ -13,7 +13,8 @@ var exercise1 = function (nums) {
 
 var exercise2 = function (nums) {
     "use strict";
-    var max = 0, i;
+    var max = 0,
+        i;
 
     for (i = 0; i < nums.length; i++) {
         if (nums[i] > max) {
@@ -31,7 +32,8 @@ var exercise_2 = function (nums) {
 
 var exercise3 = function (nums) {
     "use strict";
-    var even = "false", i;
+    var even = "false",
+        i;
 
     for (i = 0; i < nums.length; i++) {
         if (nums[i] % 2 === 0) {
@@ -45,7 +47,7 @@ var exercise3 = function (nums) {
 var exercise_3 = function (nums) {
     "use strict";
 
-    var result = _.some(nums, function(n){ 
+    var result = _.some(nums, function (n) {
         return (n % 2 === 0);
     });
 
@@ -58,13 +60,13 @@ var exercise_3 = function (nums) {
 
 var exercise4 = function (nums) {
     "use strict";
-    var even = "false", i;
+    var even = "false",
+        i;
 
     for (i = 0; i < nums.length; i++) {
         if (nums[i] % 2 === 0) {
             even = "true";
-        }
-        else {
+        } else {
             return "false";
         }
     }
@@ -74,7 +76,7 @@ var exercise4 = function (nums) {
 
 var exercise_4 = function (nums) {
     "use strict";
-    var result = _.every(nums, function(n){ 
+    var result = _.every(nums, function (n) {
         return (n % 2 === 0);
     });
 
@@ -87,7 +89,8 @@ var exercise_4 = function (nums) {
 
 var arrayContains = function (arr, str) {
     "use strict";
-    var found = "false", i;
+    var found = "false",
+        i;
 
     for (i = 0; i < arr.length; i++) {
         if (arr[i] === str) {
@@ -100,7 +103,8 @@ var arrayContains = function (arr, str) {
 
 var arrayContainsTwo = function (arr, str) {
     "use strict";
-    var found = 0, i;
+    var found = 0,
+        i;
 
     for (i = 0; i < arr.length; i++) {
         if (arr[i] === str) {
@@ -110,15 +114,15 @@ var arrayContainsTwo = function (arr, str) {
 
     if (found >= 2) {
         return "true";
-    }
-    else {
+    } else {
         return "false";
     }
 };
 
 var arrayContainsThree = function (arr, str) {
     "use strict";
-    var found = 0, i;
+    var found = 0,
+        i;
 
     for (i = 0; i < arr.length; i++) {
         if (arr[i] === str) {
@@ -128,15 +132,15 @@ var arrayContainsThree = function (arr, str) {
 
     if (found >= 3) {
         return "true";
-    }
-    else {
+    } else {
         return "false";
     }
 };
 
 var arrayContainsNTimes = function (arr, str, count) {
     "use strict";
-    var found = 0, i;
+    var found = 0,
+        i;
 
     for (i = 0; i < arr.length; i++) {
         if (arr[i] === str) {
@@ -146,8 +150,7 @@ var arrayContainsNTimes = function (arr, str, count) {
 
     if (found >= count) {
         return "true";
-    }
-    else {
+    } else {
         return "false";
     }
 };
@@ -169,15 +172,15 @@ inject("ex5_1", arrayContains(["hello", "world"], "hello"));
 inject("ex5_2", arrayContains(["hello", "world"], "goodbye"));
 inject("ex5_3", arrayContains(["hello", "world", "goodbye"], "goodbye"));
 
-inject("ex6_1", arrayContainsTwo(["a","b","a","c"], "a"));
+inject("ex6_1", arrayContainsTwo(["a", "b", "a", "c"], "a"));
 //alert(arrayContainsTwo(["a","b","a","c"], "b"))
 //alert(arrayContainsTwo(["a","b","a","c","a"], "a"))
 
-inject("ex6_2", arrayContainsThree(["a","b","c","c"], "a"));
+inject("ex6_2", arrayContainsThree(["a", "b", "c", "c"], "a"));
 //alert(arrayContainsThree(["a","b","a","c", "a"], "a"))
 //alert(arrayContainsThree(["a","b","a","c"], "b"))
 //alert(arrayContainsThree(["a","b","a","c","a", "a"], "a"))
 
-inject("ex6_3", arrayContainsNTimes(["a","b","a","c"], "a", 2));
+inject("ex6_3", arrayContainsNTimes(["a", "b", "a", "c"], "a", 2));
 //alert(arrayContainsNTimes(["a","b","a","c"], "a", 3))
 //alert(arrayContainsNTimes(["a","b","a","c", "a", "a"], "a", 4))
