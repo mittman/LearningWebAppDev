@@ -1,0 +1,35 @@
+html body {
+  background-color: #E6E6E6;
+}
+
+.title {
+  font-size: 2em;
+  color: #FF0000;
+  padding: 5em;
+  float: right;
+}
+
+.heading {
+  font-size: 1.25em;
+  margin: 1em 0 0 3em;
+}
+
+.mdl-list {
+  padding: 5em 0 20em 10em;
+}
+
+.mdl-list__item {
+  width: 50%;
+}
+
+.mdl-list__item:nth-of-type(odd) {
+  background: #EEEEEC;
+}
+
+.mdl-list__item:nth-of-type(even) {
+  background: #BABDB6;
+}
+
+.clicked {
+  background-color: yellow;
+}
