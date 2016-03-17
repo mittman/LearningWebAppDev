@@ -15,7 +15,7 @@ html body {
 }
 
 .mdl-list {
-  padding: 5em 0 20em 10em;
+  padding: 5em 0 2em 10em;
 }
 
 .mdl-list__item {
@@ -32,4 +32,18 @@ html body {
 
 .clicked {
   background-color: yellow;
+}
+
+.form {
+  text-shadow: 2px 2px 2px 2px;
+  padding: 1em 1em 2em 20em;
+}
+
+input {
+  font-size: 1.2em;
+}
+
+input:focus {
+  border: 2px solid #555555;
+  background-color: #FDFDFD;
 }
